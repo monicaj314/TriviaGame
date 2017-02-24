@@ -21,7 +21,7 @@ for (var i = 0; i < triviaGame.questions.length; i++) {
 
 function listChoices() {
 	for (var i = 0; i < choices.length; i++) {
-		var guessOptions = $('<div class="choices">' + choices[i] + '<div>');
+		var guessOptions = $('<div class="choices"><input type="radio" name="question"' + triviaGame.questions[i].id + 'value=' + choices[i] + '>' + choices[i] + '<div>');
 		$('body').append(guessOptions);
 	}
 }
