@@ -10,7 +10,7 @@ var triviaGame = {
 	countRight: 0,
 	countWrong: 0,
 	countBlank: 0,
-	timeRemaining: 5
+	timeRemaining: 30
 
 }
 
