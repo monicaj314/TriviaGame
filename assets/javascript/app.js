@@ -26,7 +26,7 @@ var triviaGame = {
 
 	listChoices: function() {
 		for (var i = 0; i < triviaQuestion.answerChoices.length; i++) {
-		var guessOptions = $('<div class="answer_choices"><input type="radio" name="' + triviaQuestion.id + '" value="' + triviaQuestion.answerChoices[i] + '">' + triviaQuestion.answerChoices[i] + '<div>');
+		var guessOptions = $('<div class="answer_choices"><input type="radio" name="' + triviaQuestion.id + '" value="' + triviaQuestion.answerChoices[i] + '">' + triviaQuestion.answerChoices[i] + '</div>');
 		$('#trivia_game').append(guessOptions);
 		}
 	},
