@@ -1,11 +1,59 @@
 body {
-	background-image: url("assets/images/ilmatyr.jpg");
+	background-image: url('../images/ilmatyr.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment:fixed;
+  	background-size: cover;
+  	font-size: 13pt;
+  	font-family: 'Lusitana', serif;
+  	line-height: 1.5;
+}
+header {
+	font-weight: bolder;
+	font-size: 2em;
+	text-align: center;
+}
+em {
+	text-decoration: underline ;
+}
+#start {
+	padding: 20px;
+	padding-bottom: 100%;
+	background-image: url('../images/parchment.jpg');
+	background-size: 100%,100%;
+	background-repeat: no-repeat;
+	text-align:center;
+}
+
+.first-paragraph {
+	text-align: left;
+	font-size: 12pt;
+	margin-left: 20px;
 }
 
 #trivia_container {
-display:none;
+	display:none;
+	background-image: url('../images/parchment.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	overflow: visible;
 }
 
 #results {
-display:none;
+	display:none;
+	background-image: url('../images/parchment.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding: 50px 
+}
+
+button, {
+	background-color: #AE363E;
+	font-family: 'Cardo', serif;
+	color: #CBBF41;
+	padding: 5px;
+	border: solid 2px black;
+	margin-top: auto;
+
 }

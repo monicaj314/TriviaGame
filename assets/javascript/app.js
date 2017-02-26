@@ -50,16 +50,17 @@ var triviaGame = {
 	showResults: function() {
 	clearInterval(this.triviaTimer);
 	$("#trivia_container").hide();
+	$("#results").append("Time's up! Here's how you did: <br><br>")
 	$("#results").append("<p>Correct Answers: " + this.countRight + "</p>");
 	$("#results").append("<p>Incorrect Answers: " + this.countWrong + "</p>");
-	$("#results").append("<p>Unanswered: " + this.countBlank + "</p>");
+	$("#results").append("<p>Unanswered: " + this.countBlank + "</p> <br> Thanks for playing!");
 	$("#results").show();
 	},
 }
 
 for (var i = 0; i < triviaGame.questions.length; i++) {
 	var triviaQuestion = triviaGame.questions[i];
-	var nextQuestion = $('<div id="question' + triviaQuestion.id + '">' + triviaQuestion.challenge + '</div>');
+	var nextQuestion = $('<br>' + '<div id="question' + triviaQuestion.id + '">' + triviaQuestion.challenge + '</div>'  + '<br>');
 	$('#trivia_game').append(nextQuestion);
 	triviaGame.listChoices(triviaQuestion);
 	$("#timer").text("Time Remaining: " + triviaGame.timeRemaining + " seconds");
