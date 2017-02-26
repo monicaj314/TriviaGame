@@ -1,3 +1,7 @@
+body {
+	background-image: url("assets/images/ilmatyr.jpg");
+}
+
 #trivia_container {
 display:none;
 }

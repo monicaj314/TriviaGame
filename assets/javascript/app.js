@@ -18,8 +18,8 @@ var triviaGame = {
           clearInterval(this.triviaTimer);
           triviaGame.checkAnswers();
         } else {
-          triviaGame.timeRemaining--;
-          $("#timer").text("Time Remaining: " + triviaGame.timeRemaining); 
+        triviaGame.timeRemaining--; 
+        $("#timer").html("Time Remaining: " + triviaGame.timeRemaining + " seconds");
         }
       }, 1000)
 	},
@@ -62,7 +62,7 @@ for (var i = 0; i < triviaGame.questions.length; i++) {
 	var nextQuestion = $('<div id="question' + triviaQuestion.id + '">' + triviaQuestion.challenge + '</div>');
 	$('#trivia_game').append(nextQuestion);
 	triviaGame.listChoices(triviaQuestion);
-	$("#timer").text("Time Remaining: " + triviaGame.timeRemaining);
+	$("#timer").text("Time Remaining: " + triviaGame.timeRemaining + " seconds");
 }
 
 $("#start_game").on("click", function() {
