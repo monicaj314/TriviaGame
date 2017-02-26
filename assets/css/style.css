@@ -36,8 +36,16 @@ em {
 	background-image: url('../images/parchment.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
 
-	overflow: visible;
+#timer {
+	margin-top: 50px;
+	font-size: 2em;
+}
+#question, .answer_choice {
+	text-align:left;
 }
 
 #results {
@@ -48,7 +56,16 @@ em {
 	padding: 50px 
 }
 
-button, {
+#summon_results {
+	margin-top: 35px;
+	margin-bottom: 35px;
+	background-color: #AE363E;
+	font-family: 'Cardo', serif;
+	color: #CBBF41;
+	border: solid 2px black;
+}
+
+button {
 	background-color: #AE363E;
 	font-family: 'Cardo', serif;
 	color: #CBBF41;
